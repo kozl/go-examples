@@ -36,10 +36,12 @@ func NewDownloader(ch *chan string, limit, outdir string) *Downloader {
 	switch limit[len(limit)-1] {
 	case 'k', 'K':
 		multiplier = int64(1024)
+		limit = limit[:len(limit)-1]
 	case 'm', 'M':
 		multiplier = int64(1024 * 1024)
+		limit = limit[:len(limit)-1]
 	}
-	limitBytes, err := strconv.ParseInt(limit[:len(limit)-1], 10, 64)
+	limitBytes, err := strconv.ParseInt(limit, 10, 64)
 	if err != nil {
 		log.Fatal(err)
 	}
