@@ -1,0 +1,3 @@
+http://data.nag.ru/Dahua/Certificate/cameras.pdf cameras.pdf
+http://data.nag.ru/Dahua/Parking/Parking%20Detector.pptx presentation.pptx
+http://data.nag.ru/AM%20OTDR/Compare%20OTDR.pdf compare.pdf
